@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:new_api_v2/pages/home.dart';
 import 'package:new_api_v2/typography_theme_g.dart';
 import 'color_schemes.g.dart';
 import 'firebase_options.dart';
@@ -20,12 +21,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme,
+
+      theme: ThemeData(
+          useMaterial3: true,
+          colorScheme: lightColorScheme,
+        appBarTheme: const AppBarTheme(
+            elevation: 0.0,
+            backgroundColor: Color(0xFFDAE2FF),
+            centerTitle: true,
+        ),
+
         textTheme: textTheme
       ),
       darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme
       ,textTheme: textTheme),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const Home(),
     );
   }
 }

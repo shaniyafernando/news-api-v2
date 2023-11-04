@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.11.0
   firebase_core: ^2.18.0
+  flutter_redux: ^0.10.0
+  dio: ^5.3.3
 
 dev_dependencies:
   flutter_test:
@@ -70,9 +72,9 @@ flutter:
         - asset: assets/fonts/oswald/static/Oswald-Light.ttf
 
   # To add assets to your application, add an assets section, like this:
-#  assets:
-#    - assets/fonts/roboto/
-#    - assets/fonts/oswald/static/
+  assets:
+    - assets/logos/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
